@@ -6,12 +6,12 @@ body {
   .App {
     display: flex;
     justify-content: center;
-    .link {
-      text-decoration: none;
-      color: inherit;
-    }
     .container {
       width: 1024px;
+      .link {
+        text-decoration: none;
+        color: inherit;
+      }
       //Login and register
       .auth {
         display: flex;
@@ -114,6 +114,30 @@ body {
         .logo {
           font-size: 20px;
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+      }
+      .home {
+        .posts {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          gap: 150px;
+
+          .post {
+            display: flex;
+            gap: 100px;
+            .img {
+              flex: 2;
+              img {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+              }
+            }
+            .content {
+              flex: 3;
+            }
+          }
         }
       }
     }
