@@ -4,14 +4,14 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import "./style.scss";
-import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Post from "./pages/Post";
 import Write from "./pages/Write";
+import Home from "./pages/Home";
+import Single from "./pages/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "./style.scss"
 
 const Layout = () => {
   return (
@@ -22,6 +22,7 @@ const Layout = () => {
     </>
   );
 };
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/post/:id",
-        element: <Post />,
+        element: <Single />,
       },
       {
         path: "/write",
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="container">
         <RouterProvider router={router} />
       </div>

@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className="logo">Suyog's Blog</div>
-      <span>Made by Suyog.</span>
+      <h1>Suyog's blog</h1>
+      <span>Made with ♥️.</span>
     </footer>
   );
 };
