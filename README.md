@@ -20,3 +20,10 @@ npm install
 
 Stay in both of the terminals and execute:
 `npm start`
+
+## Screenshot
+
+Home Page
+<img src="https://github.com/suyogbud/Blog/blob/main/screenshots/home.png?raw=true">
+Text-Editor
+<img src='https://github.com/suyogbud/Blog/blob/main/screenshots/home.png?raw=true'>
